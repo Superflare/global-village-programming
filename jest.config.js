@@ -1,7 +1,8 @@
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
-module.exports = {
+const config = {
   preset: 'ts-jest',
   testEnvironment: 'node',
+  transform: {},
   globals: {
     'ts-jest': {
       tsconfig: {
@@ -10,3 +11,5 @@ module.exports = {
     }
   }  
 };
+
+module.exports = config;
